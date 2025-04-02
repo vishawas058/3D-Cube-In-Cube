@@ -1,3 +1,5 @@
+
+    
 * {
     margin: 0px;
     padding: 0px;
@@ -6,7 +8,7 @@
 html {
     overflow: hidden;
     height: 100%;
-    background: linear-gradient(rgb(245 69 69 / 77%), rgb(255 39 205 / 84%)), url(../images/background.jpg);
+    background: linear-gradient(rgb(245 69 69 / 77%), rgb(255 39 205 / 84%)), url(background.jpg);
 }
 
 body {
@@ -28,19 +30,18 @@ body {
     letter-spacing: 11px;
     margin-top: -87px !important;
     text-transform: uppercase;
-    /* justify-self: flex-start; */
-}
+    }
 
 .cube {
     position: relative;
     margin: 0px auto;
     margin-top: 15%;
-    /* margin-left: 42%; */
-    width: 200px;
+        width: 200px;
     height: 200px;
     transform: rotateX(-30deg) rotateY(-80deg);
     transform-style: preserve-3d;
     animation: rotate 15s infinite;
+will-change: transform; /* Optimize animation performance */
 }
 
 .cube .outer-cube,
@@ -48,11 +49,13 @@ body {
     transform-style: preserve-3d;
 }
 
-/* 旋转立方体 */
 @keyframes rotate {
     from {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
+        transform: rotateX(0deg) rotateY
+(0de
+g);
+  
+  }
 
     to {
         transform: rotateX(360deg) rotateY(360deg);
